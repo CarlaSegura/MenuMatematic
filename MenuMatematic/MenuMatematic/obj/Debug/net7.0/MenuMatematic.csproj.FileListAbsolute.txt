@@ -1,0 +1,5 @@
+/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.csproj.AssemblyReference.cache
+/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.AssemblyInfoInputs.cache
+/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.AssemblyInfo.cs
+/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.csproj.CoreCompileInputs.cache
