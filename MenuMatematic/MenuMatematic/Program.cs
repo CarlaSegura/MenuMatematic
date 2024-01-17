@@ -18,7 +18,8 @@ class Program
 
         switch (numEntrada)
         {
-            case 1: 
+            case 1:
+
             case 2:
             case 3:
             case 4:
@@ -27,9 +28,6 @@ class Program
             case 7:
             case 8:
             case 9:
-
-            
-
         }
 
 
@@ -92,25 +90,25 @@ class Program
     }
 
     //Combinatori
-    static int Maxim(int num1)
+    static int Combinatori(int num1)
     {
 
     }
 
     //MostrarDivisorMajor
-    static int Maxim(int num1)
+    static int MostrarDivisorMajor(int num1)
     {
 
     }
 
     //EsPrimer
-    static int Maxim(int num1)
+    static int EsPrimer(int num1)
     {
 
     }
 
     //NPrimerPrimers
-    static int Maxim(int num1)
+    static int NPrimerPrimers(int num1)
     {
 
     }
