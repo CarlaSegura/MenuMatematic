@@ -1,23 +1,19 @@
 ﻿<Properties StartupConfiguration="{8E6D5226-EDD2-476E-B528-679CFABE7892}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MenuMatematic PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="MenuMatematic/Program.cs">
     <Files>
-      <File FileName="MenuMatematic/Program.cs" Line="69" Column="17" />
+      <File FileName="MenuMatematic/Program.cs" Line="141" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MenuMatematic">
-            <Node name="MenuMatematic" expanded="True" selected="True" />
-          </Node>
-        </State>
+        <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MenuMatematic PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

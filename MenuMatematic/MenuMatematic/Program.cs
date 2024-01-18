@@ -1,80 +1,106 @@
-﻿namespace MenuMatematic;
+﻿using System;
+
+namespace MenuMatematic;
 
 class Program
 {
     //Menu
     static void Menu()
     {
-        int numeroMenu;
-
-        Console.WriteLine("1. Maxim");
-        Console.WriteLine("2. MCD");
-        Console.WriteLine("3. MCM");
-        Console.WriteLine("4. Factorial");
-        Console.WriteLine("5. Combinatori");
-        Console.WriteLine("6. Major Divisor");
-        Console.WriteLine("7. Comprovar Primer");
-        Console.WriteLine("8. Num Primers");
-        Console.WriteLine("Clica la q per sortir");
+        char numeroMenu;
+        string menu =
+        "|==============================|\n" +
+        "|             Menu             |\n" +
+        "|------------------------------|\n" +
+        "|     1. Maxim                 |\n" +
+        "|     2. MCD                   |\n" +
+        "|     3. MCM                   |\n" +
+        "|     4. Factorial             |\n" +
+        "|     5. Combinatori           |\n" +
+        "|     6. Major Divisor         |\n" +
+        "|     7. Comprovar Primer      |\n" +
+        "|     8. Num Primers           |\n" +
+        "|     Clica la q per sortir    |\n" +
+        "|==============================|\n";
 
         Console.WriteLine("Fica un numero");
-        numeroMenu = Console.ReadLine(ValorsEntrada(numeroMenu));
+        numeroMenu = Convert.ToChar(Console.ReadLine());
+        ComprovarNum(numeroMenu);
     }
 
-   static int ComprovarNum()
+    //Per comprovar si es una lletra o no
+    static char ComprovarNum(char numeroMenu)
     {
-        if (num)
+        do
+        {
+            ValorsEntrada(numeroMenu);
+        } while (numeroMenu > 1 && numeroMenu < 8);
+
+        if (numeroMenu == 'q')
+        {
+            //Finalitzar
+        }
+        else
+        {
+            Console.WriteLine("El numero no es correcte");
+            Menu();
+        }
     }
 
     //ValorsEntrada
-    static int ValorsEntrada(int numeroMenu)
+    static int ValorsEntrada(char numeroMenu)
     {
         int numero1, numero2;
 
         switch (numeroMenu)
         {
-            case 1:
+            case '1':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
                 Maxim(ref numero1, ref numero2);
                 Console.WriteLine($"El numero", numero1, "és el mes gran");
                 break;
 
-            case 2:
+            case '2':
+                numero1 = DemanarValors();
+                numero2 = DemanarValors();
+                Mcd(ref numero1, ref numero2);
+                Console.WriteLine()
+                break;
+
+            case '3':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
                 break;
 
-            case 3:
+            case '4':
+                numero1 = DemanarValors();
+                break;
+
+            case '5':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
                 break;
 
-            case 4:
-                numero1 = DemanarValors();
-
-            case 5:
+            case '6':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
+                break;
 
-            case 6:
+            case '7':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
+                break;
 
-            case 7:
+            case '8':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
+                break;
 
-            case 8:
+            case '9':
                 numero1 = DemanarValors();
                 numero2 = DemanarValors();
-
-            case 9:
-                numero1 = DemanarValors();
-                numero2 = DemanarValors();
-
-            default:
-
+                break;
         }
     }
 
@@ -99,15 +125,26 @@ class Program
     }
 
     //mcd
-    static int Mcd(int num1)
+    static void Mcd(ref int numero1, ref int numero2)
     {
-
+        while (numero1 != 0)
+        {
+            int temp = numero2;
+            numero2 = numero1 % numero2;
+            numero1 = temp;
+        }
     }
 
     //mcm
     static int Mcm(int num1)
     {
+        //Debes de utilizar si o si el mcd
+        if (a == 0 || b == 0)
+        {
+            return 0;
+        }
 
+        return (a * b) / CalcularMCD(a, b);
     }
 
     //Factorial
@@ -135,35 +172,26 @@ class Program
     }
 
     //NPrimerPrimers
-    static int NPrimerPrimers(int num1)
+    static int NPrimerPrimers(int num1) //Poses un numero i ha de dir-te tots els numeros primers avans que aquell numero
     {
 
     }
 }
 
-static int IntroduirValor()
+
+static void retornar()
 {
-    Console.Clear();
-    Console.Write("Escriu un Valor");
-    
-}
-
-
-static void return()
+    int i = 5;
+    while (i != 0)
     {
-        int i = 5;
-        while(i!=0)
-        {
-            Console.Write("\r")
-            Console.Write($"Tornant al menu: {i}s")
+            Console.Write("\r");
+            Console.Write($"Tornant al menu: {i}s");
             Thread.Sleep(1000);
-            i--
-        }
-        Menu();
+            i--;
     }
+    Menu();
 
-
-
+}
 
 static void Main(string[] args)
 {
