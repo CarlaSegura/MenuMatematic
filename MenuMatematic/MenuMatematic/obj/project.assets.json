@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/karlasepo/.nuget/packages/": {}
+    "C:\\Users\\Karlasepo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/MenuMatematic.csproj",
+      "projectUniqueName": "C:\\Users\\Karlasepo\\Desktop\\Programacion\\Practica1\\MenuMatematic\\MenuMatematic\\MenuMatematic\\MenuMatematic.csproj",
       "projectName": "MenuMatematic",
-      "projectPath": "/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/MenuMatematic.csproj",
-      "packagesPath": "/Users/karlasepo/.nuget/packages/",
-      "outputPath": "/Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/",
+      "projectPath": "C:\\Users\\Karlasepo\\Desktop\\Programacion\\Practica1\\MenuMatematic\\MenuMatematic\\MenuMatematic\\MenuMatematic.csproj",
+      "packagesPath": "C:\\Users\\Karlasepo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Karlasepo\\Desktop\\Programacion\\Practica1\\MenuMatematic\\MenuMatematic\\MenuMatematic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/karlasepo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Karlasepo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
