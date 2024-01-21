@@ -3,3 +3,17 @@
 /Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.AssemblyInfoInputs.cache
 /Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.AssemblyInfo.cs
 /Users/karlasepo/WorkingDirectory/MenuMatematic/MenuMatematic/obj/Debug/net7.0/MenuMatematic.csproj.CoreCompileInputs.cache
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\bin\Debug\net7.0\MenuMatematic.exe
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\bin\Debug\net7.0\MenuMatematic.deps.json
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\bin\Debug\net7.0\MenuMatematic.runtimeconfig.json
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\bin\Debug\net7.0\MenuMatematic.dll
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\bin\Debug\net7.0\MenuMatematic.pdb
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.AssemblyInfoInputs.cache
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.AssemblyInfo.cs
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.csproj.CoreCompileInputs.cache
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.dll
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\refint\MenuMatematic.dll
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.pdb
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\MenuMatematic.genruntimeconfig.cache
+C:\Users\Karlasepo\Desktop\Programacion\Practica1\MenuMatematic\MenuMatematic\MenuMatematic\obj\Debug\net7.0\ref\MenuMatematic.dll

@@ -1,10 +1,25 @@
-﻿using System;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace MenuMatematic;
+﻿namespace MenuMatematic;
 
 class Program
 {
+    static void Main(string[] args)
+    {
+        Menu();
+    }
+
+    static void retornar()
+    {
+        int i = 5;
+        while (i != 0)
+        {
+            Console.Write("\r");
+            Console.Write($"Tornant al menu: {i}s");
+            Thread.Sleep(1000);
+            i--;
+        }
+        Menu();
+    }
+
     //Menu
     static void Menu()
     {
@@ -27,10 +42,11 @@ class Program
         Console.WriteLine("Fica un numero");
         numeroMenu = Convert.ToChar(Console.ReadLine());
         ComprovarNum(numeroMenu);
+        retornar();
     }
 
     //Per comprovar si es una lletra o no
-    static char ComprovarNum(char numeroMenu)
+    static void ComprovarNum(char numeroMenu)
     {
         do
         {
@@ -49,7 +65,7 @@ class Program
     }
 
     //ValorsEntrada
-    static int ValorsEntrada(char numeroMenu)
+    static void ValorsEntrada(char numeroMenu)
     {
         int numero1, numero2;
 
@@ -84,27 +100,27 @@ class Program
 
             case '5':
                 numero1 = DemanarValors();
-                int combinatori = Combinatori(numero1);
-                Console.WriteLine($"El Factorial de {numero1} és: {combinatori}");
                 numero2 = DemanarValors();
+                int combinatori = Combinatori(numero1, numero2);
+                Console.WriteLine($"El combinatori de {numero1} i {numero2} és: {combinatori}");
                 break;
 
             case '6':
                 numero1 = DemanarValors();
-                //MostrarDivisorMajor
-                numero2 = DemanarValors();
+                int divisorMajor = MostrarDivisorMajor(numero1);
+                Console.WriteLine($"El divisor major de {numero1} és: {divisorMajor}");
                 break;
 
             case '7':
                 numero1 = DemanarValors();
-                numero2 = DemanarValors();
-                //EsPrimer
+                bool primer = EsPrimer(numero1);
+                if (primer) Console.WriteLine($"{numero1} és un numero primer");
+                else Console.WriteLine($"{numero1} no és un numero primer");
                 break;
 
             case '8':
                 numero1 = DemanarValors();
-                //NPrimerPrimers
-                numero2 = DemanarValors();
+                NPrimerPrimers(numero1);
                 break;
         }
     }
@@ -117,8 +133,6 @@ class Program
         numero = Console.Read();
         return numero;
     }
-
-    //Console.WriteLine(Metode(Variable));
 
     //Maxim
     static void Maxim (ref int numero1, ref int numero2)
@@ -148,7 +162,6 @@ class Program
         {
             return 0;
         }
-
         return (numero1 * numero2) / Mcd(numero1, numero2);
     }
 
@@ -166,9 +179,10 @@ class Program
     //Combinatori
     static int Combinatori(int numero1, int numero2)
     {
-        if (numero1 < 0 || numero2 < 0 || numero2 > numero1)
+        if (numero1 <= 0 || numero2 <= 0 || numero2 > numero1)
         {
-           //Tornar menu
+            Console.WriteLine("Els valors posats no poden ser menors o iguals que 0 i el segon numero ha de ser mes petit");
+            Menu();
         }
         int res = Factorial(numero1) / (Factorial(numero2) * Factorial(numero1 - numero2));
         return res;
@@ -179,15 +193,25 @@ class Program
     {
         if (numero1 <= 0)
         {
-            //Tornar menu
+            Console.WriteLine("Els valors posats no poden ser menors o iguals que 0");
+            Menu();
         }
-        //Falta codi
+
+        int divisorMajor = 1;
+        for (int i = 2; i <= Math.Sqrt(numero1); i++)
+        {
+            if (numero1 % i == 0)
+            {
+                divisorMajor = i;
+            }
+        }
+
+        return divisorMajor;
     }
 
     //EsPrimer
     static bool EsPrimer(int numero1)
     {
-        bool primer = false;
         int cont2 = 1;
 
         for (int i = 1; i <= numero1; i++)
@@ -209,28 +233,15 @@ class Program
     }
 
     //NPrimerPrimers
-    static int NPrimerPrimers(int numero1) //Poses un numero i ha de dir-te tots els numeros primers avans que aquell numero
+    static void NPrimerPrimers(int numero1)
     {
-
+        for (int i = 2; i < numero1; i++)
+        {
+            if (EsPrimer(i))
+            {
+                Console.Write($"{i} ");
+            }
+        }
+        Console.WriteLine();
     }
-}
-
-
-static void retornar()
-{
-    int i = 5;
-    while (i != 0)
-    {
-            Console.Write("\r");
-            Console.Write($"Tornant al menu: {i}s");
-            Thread.Sleep(1000);
-            i--;
-    }
-    Menu();
-
-}
-
-static void Main(string[] args)
-{
-
 }
